@@ -93,10 +93,10 @@ public class Persona {
         String imcMessage;
         if(imc<20){
             imcResult = -1;
-            imcMessage = "Esta por encima de su peso ideal";
+            imcMessage = "Esta por debajo de su peso ideal";
         }else if(imc>25){
             imcResult = 1;
-            imcMessage = "Esta por debajo de su peso ideal";
+            imcMessage = "Esta por encima de su peso ideal";
         }else{
             imcResult = 0;
             imcMessage = "Esta en su peso ideal";

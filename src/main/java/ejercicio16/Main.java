@@ -40,6 +40,7 @@ public class Main {
     }
 
     public void setValues(String nombre, Double peso, Double altura, Character sexo, Integer edad){
+
         Persona persona = new Persona();
         persona.setNombre(nombre);
         persona.setPeso(peso);
@@ -50,6 +51,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
+
 
         Main obj = new Main();
         String nombre = obj.askName();
@@ -63,6 +65,15 @@ public class Main {
         Persona persona1 = new Persona(nombre,edad,sexo,peso,altura);
         Persona persona2 = new Persona(nombre,edad,sexo);
         Persona persona3 = new Persona();
+
+        persona2.setAltura(1.80);
+        persona2.setPeso(75.9);
+
+        persona3.setNombre("Alonso");
+        persona3.setEdad(15);
+        persona3.setSexo('H');
+        persona3.setPeso(45.4);
+        persona3.setAltura(1.45);
 
         System.out.println("El IMC de la persona 1 indica que: "+persona1.calcularIMC());
         System.out.println("El IMC de la persona 2 indica que: "+persona2.calcularIMC());
